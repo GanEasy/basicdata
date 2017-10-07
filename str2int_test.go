@@ -25,6 +25,16 @@ func Test_String2Int64(t *testing.T) {
 	fmt.Println(i64)
 }
 
+func Test_TimeString2Int64(t *testing.T) {
+
+	i64, err := strconv.ParseInt("1507345151", 10, 64)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Print(i64)
+
+}
+
 func Test_String2Int32(t *testing.T) {
 
 	i64, err := strconv.ParseInt("s3200000", 10, 32)
